@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<LINK href="GRADZ_9.css" rel="stylesheet" type="text/CSS">
+</head>
+<body>
+<h1> Składnia teoretyczna arkusza zewnętrznego </h1>
+<table border=1>
+<tr>
+<td>
+ < head > <br>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ( ...)<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp < link rel="Stylesheet" type="text/css" href="style.css" / ><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp( ...)<br>
+< /head >	 
+</td>
+</tr>
+</table>
+
+<h1> Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz<br> 
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS? </h1>
+<p>wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy 
+znacznikami < head > a < /head >), przedstawioną powyżej linijkę</p>
+
+
+<h1> Jak jest najprostsza forma wstawiania stylu zewnętrznego?</h1>
+<p> w sekcji < head > ... < / head > wstawiamy poniższą linijke:<br><br>
+<table border=1>
+<tr>
+<td>
+< link rel="Stylesheet" type="text/css" href="style.css" />
+</td>
+</tr>
+</table>
+
+
+<h1> Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad <br>
+musi być zachowana przy większej ilości dołączanych styli?</h1>
+<p>można dołączyć dowolną liczbę zewnętrznych arkuszy stylów 
+- każdy jako osobny element < link rel="Stylesheet" />.</p>
+
+<h1> Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style <br>
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.</h1>
+<p>W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później</p>
+
+<h1> Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? </h1>
+<p>Możemy zrobić taki plik najzwyczajniej w notatniku, i tam zapisywać wszelkiego rodzaju cechy i wartośći.<br>
+Natomiast przy zapisie musimy pamiętać o zaznaczeniu opcji "wszystkie pliki" i dodać rozszerzenie .css</p>
+
+<h1> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS? </h1>
+<p>Polega to na wybieraniu selektorów z dostępnej listy, a następnie przypisywaniu im kolejnych par cech-wartości.<br>
+ Po zdefiniowaniu całego zestawu arkusz jest zapisywany na dysku jako plik z rozszerzeniem .css i może służyć<br>
+ jako zewnętrzny arkusz stylów.</p>
+
+<h1> Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem styli? </h1>
+<p> Posiada on rozszerzenie .css
+
+<h1> Jakie są zalety zewnętrznego arkusza styli</h1>
+<ul>
+<p><li> wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. </li><br> 
+<li> jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich<br> 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez <br> 
+konieczności zmiany każdej strony osobno.</li></p>
+</ul>
+<h1> Uwagi na temat pisania w CSS </h1>
+</body>
+</html>

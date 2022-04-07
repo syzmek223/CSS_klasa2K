@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+
+	<h1>Sposoby podłączania styli do strony</h1>
+
+<table border="6px">
+	<tr>
+		<font size="7"><b>1)<u>Zewnętrzny</u> arkusz stylów.</b></font>
+		<td>
+			&lt;head&gt;<br>
+			&nbsp; &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;</br>
+			&lt;/head&gt;<br>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		
+		<td>
+			<font size="7"><b>2)Styl <u>Lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+dopisanie arkusza do wybranego bloku treści strony.</b></font><br>
+			&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;<br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<font size="7"><b>3)<u>Wewnętrzny</u> arkusz stylów.</b></font><br>
+			&lt;head&gt;<br>
+				<b>&nbsp; &lt;style type="text/css"&gt;</b><br>
+					&nbsp &nbsp selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+					&nbsp &nbsp selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+				&nbsp; &lt;<b>/style</b>&gt;<br>
+			&lt;/head&gt;<br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<font size="7"><b>3)<u>Alternatywny</u> arkusz stylów.</b></font><br>
+			&lt;head&gt;<br>
+				&nbsp; &lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;<br>
+				&nbsp; &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;<br>
+				&nbsp; &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;<br>
+			&lt;/head&gt;<br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<font size="5"><b>3)<u>Import</u> arkusza stylów.</b></font><br>
+			&lt;style type="text/css"&gt;<br>
+			&nbsp;	@import url(adres zewnętrznego arkusza stylów);<br>
+			&lt;/style&gt;<br>
+		</td>
+	</tr>
+</table>
+
+
+
+</body>
+</html>

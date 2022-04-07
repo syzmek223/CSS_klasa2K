@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+p {
+    font-family: Arial;
+}
+</style>
+</head>
+<body>
+<ol>
+    <h1><li>Gdzie jest wstawiany arkusz wewnętrzny css?</li></h1>
+	 <p> Arkusz wewnętrzny css jest wstawiany w tagu < head > pod podstacią < style > ... < / style > </p>
+   <h1><li>Składnia teoretyczna (w ramce, konieczne wcięcia)</li></h1>
+   <table border=1>
+   <tr>
+   <td>
+<p>   < head ><br>
+(...)<br>
+< style type="text/css" ><br>
+/* < ![CDATA[ */<br>
+selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+(...)<br>
+/* ]]> */<br>
+< / style><br>
+(...)<br>
+</ head >
+   </td>
+   </tr>
+   </p>
+   </table>
+   <h1><li>Jakie mogą być selektory? </li></h1>
+   <p> Może to być dowolny znacznik np < p > , < h > , < td > itp.</p>
+    <h1><li>Jakie mogą być cechy i wartości akrusza wewnętrznego css ? </li></h1>
+	<p>Jako <b>"cecha"</b> (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty formatowania nam chodzi (opisane w kolejnych rozdziałach).<br>
+Natomiast jako wyraz <b>"wartość"</b> wpisujemy dokładną wartość atrybutu.
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami.</p>
+<ol>
+</body>
+</html>
