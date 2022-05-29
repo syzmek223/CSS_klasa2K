@@ -1,0 +1,14 @@
+p{
+	color: red;
+	font-size: 22pt;
+}
+
+p#gruby_Gradzewicz{
+	color: green;
+	font-size: 17pt;
+}
+
+#dlawszystkich_Gradzewicz{
+	color: yellow;
+	font-size: 10pt;
+}
